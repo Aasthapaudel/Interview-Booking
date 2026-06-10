@@ -9,18 +9,18 @@ Base.metadata.create_all(bind=engine)
 logger.info("Database tables created / verified")
 
 app = FastAPI(
-    title="RAG Backend",
+    title="Interview booking RAG",
     description=(
-        "A custom Retrieval-Augmented Generation (RAG) backend.\n\n"
-        "**Document Ingestion API** — Upload `.pdf` or `.txt` files, extract text, "
-        "apply two chunking strategies, embed and store vectors in Qdrant, "
+        "Interview booking RAG system.\n\n"
+        "Document Ingestion API — Upload `.pdf` or `.txt` files, extract text, "
+        "apply chunking strategies, embed and store vectors in Qdrant, "
         "and save metadata to SQLite.\n\n"
-        "**Conversational RAG API** — Multi-turn chat backed by Redis, "
+        "Conversational RAG API — Multi-turn chat backed by Redis, "
         "with Qdrant semantic retrieval, Groq LLM responses, and interview booking support."
     ),
-    version="1.0.0",
-    contact={"name": "Aastha Singh"},
-    license_info={"name": "Private"},
+    # version="1.0.0",
+    # contact={"name": "Aastha Paudel"},
+    # license_info={"name": "Private"},
 )
 
 app.include_router(ingestion.router)

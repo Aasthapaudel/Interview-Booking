@@ -44,7 +44,6 @@ rag_backend/
 ├── requirements.txt
 ├── .env.example               # copy to .env and fill in your keys
 ├── tests.py                   # full pytest test suite
-├── HOW_TO_RUN.txt             # step-by-step setup (Windows / Mac / Linux)
 └── app/
     ├── config.py              # settings loaded from .env via pydantic-settings
     ├── api/
@@ -134,7 +133,7 @@ pytest tests.py -v
 
 ## Constraints Met
 
-- ✅ No FAISS / Chroma / LangChain / RetrievalQAChain
-- ✅ No UI — pure REST API
-- ✅ Modular, typed code following industry standards
-- ✅ Full docstrings and type annotations on every function
+- No FAISS / Chroma / LangChain / RetrievalQAChain
+- No UI — pure REST API
+- Modular, typed code following industry standards
+- Full docstrings and type annotations on every function
