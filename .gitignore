@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.pyc
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Environment secrets
+.env
+
+# Database
+ragdb.db
+*.db
+*.sqlite3
+
+# Qdrant binary and data
+qdrant
+qdrant.tar.gz
+storage/
+snapshots/
+.qdrant-initialized
+
+# Test cache
+.pytest_cache/
+.coverage
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic-settings
+pymupdf
+sentence-transformers
+qdrant-client
+sqlalchemy
+redis
+groq
+loguru
+pytest
+httpx
